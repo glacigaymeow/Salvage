@@ -1,0 +1,5 @@
+// 26.2	-999999999-01-01T00:00:00	Salvage/Salvage Recipes
+ea26218f90e738938da4169f9df26d26057acbe8 data/salvage/advancement/recipes/misc/iron_ingot_from_blasting_iron_scrap.json
+cb85a04755ea8022927cb0825ac9b4b562c857a8 data/salvage/advancement/recipes/misc/iron_ingot_from_smelting_iron_scrap.json
+2e0ef331dd93ae7a92e59ad703338e2e3fa568f6 data/salvage/recipe/iron_ingot_from_blasting_iron_scrap.json
+ba8b1f7a0c0f23f8c503c2beac8062bd25b1ea6c data/salvage/recipe/iron_ingot_from_smelting_iron_scrap.json
