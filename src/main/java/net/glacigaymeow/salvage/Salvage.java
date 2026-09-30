@@ -2,6 +2,8 @@ package net.glacigaymeow.salvage;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.glacigaymeow.salvage.block.ModBlocks;
+import net.glacigaymeow.salvage.creativemodetab.ModCreativeModeTabs;
 import net.glacigaymeow.salvage.item.ModItems;
 import net.minecraft.resources.Identifier;
 
@@ -14,7 +16,11 @@ public class Salvage implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModCreativeModeTabs.registerModCreativeModeTabs();
+
 		ModItems.registerModItems();
+
+		ModBlocks.registerModBlocks();
 	}
 
 

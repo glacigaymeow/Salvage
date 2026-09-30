@@ -1,3 +1,6 @@
 {
-  "item.salvage.iron_scrap": "Iron Scrap"
+  "item.salvage.iron_scrap": "Metal Scrap",
+  "block.salvage.plated_netherite": "Plated Block Of Netherite",
+  "block.salvage.cut_plated_netherite": "Cut Plated Netherite",
+  "creativemodetab.salvage.salvage_items": "Salvage"
 }

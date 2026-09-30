@@ -1,5 +1,6 @@
 package net.glacigaymeow.salvage.datagen;
 
+import com.ibm.icu.impl.duration.impl.DataRecord;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.glacigaymeow.salvage.item.ModItems;

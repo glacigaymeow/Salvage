@@ -2,6 +2,7 @@ package net.glacigaymeow.salvage.datagen;
 
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
+import net.glacigaymeow.salvage.block.ModBlocks;
 import net.glacigaymeow.salvage.item.ModItems;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
@@ -14,6 +15,8 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockModelGenerators blockModelGenerators) {
+        blockModelGenerators.createTrivialCube(ModBlocks.PLATED_NETHERITE);
+        blockModelGenerators.createTrivialCube(ModBlocks.CUT_PLATED_NETHERITE);
 
     }
 
