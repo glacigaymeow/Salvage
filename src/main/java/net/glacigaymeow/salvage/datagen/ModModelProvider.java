@@ -26,6 +26,6 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerators itemModelGenerators) {
-        itemModelGenerators.generateFlatItem(ModItems.IRON_SCRAP, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.METAL_SCRAP, ModelTemplates.FLAT_ITEM);
     }
 }
