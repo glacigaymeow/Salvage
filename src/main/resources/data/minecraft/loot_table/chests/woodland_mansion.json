@@ -6,7 +6,7 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "name": "minecraft:creeper_head",
+                    "name": "salvage:iron_scrap",
                     "weight": 5,
                     "conditions": [],
                     "functions": [

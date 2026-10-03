@@ -3,6 +3,7 @@ package net.glacigaymeow.salvage.datagen;
 import com.ibm.icu.impl.duration.impl.DataRecord;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
+import net.glacigaymeow.salvage.block.ModBlocks;
 import net.glacigaymeow.salvage.item.ModItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.HolderLookup;
@@ -12,6 +13,7 @@ import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.CookingBookCategory;
+import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.ItemLike;
 
 import java.util.List;
@@ -28,9 +30,10 @@ public class ModRecipeProvider extends FabricRecipeProvider {
             @Override
             public void buildRecipes() {
                 List<ItemLike> IRON_INGOT_SMELTABLES = List.of(ModItems.IRON_SCRAP);
-                oreSmelting(IRON_INGOT_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.BLOCKS, Items.IRON_INGOT, 0.7f, 200, "iron_ingot");
-                oreBlasting(IRON_INGOT_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.BLOCKS, Items.IRON_INGOT, 0.35f, 100, "iron_ingot");
-            }
+             oreSmelting(IRON_INGOT_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.BLOCKS, Items.IRON_INGOT, 0.7f, 200, "iron_ingot");
+             oreBlasting(IRON_INGOT_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.BLOCKS, Items.IRON_INGOT, 0.35f, 100, "iron_ingot");
+
+            };
         };
     }
 

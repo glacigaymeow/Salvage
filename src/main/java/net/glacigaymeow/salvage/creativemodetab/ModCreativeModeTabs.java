@@ -20,6 +20,9 @@ public class                           ModCreativeModeTabs {
                  output.accept(ModItems.IRON_SCRAP);
                  output.accept(ModBlocks.PLATED_NETHERITE);
                  output.accept(ModBlocks.CUT_PLATED_NETHERITE);
+                 output.accept(ModBlocks.CUT_PLATED_NETHERITE_STAIRS);
+                 output.accept(ModBlocks.CUT_PLATED_NETHERITE_SLAB);
+
 
 
             }).build());

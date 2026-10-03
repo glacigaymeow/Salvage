@@ -16,7 +16,11 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockModelGenerators blockModelGenerators) {
         blockModelGenerators.createTrivialCube(ModBlocks.PLATED_NETHERITE);
-        blockModelGenerators.createTrivialCube(ModBlocks.CUT_PLATED_NETHERITE);
+       // blockModelGenerators.createTrivialCube(ModBlocks.CUT_PLATED_NETHERITE);
+
+        blockModelGenerators.family(ModBlocks.CUT_PLATED_NETHERITE)
+                .stairs(ModBlocks.CUT_PLATED_NETHERITE_STAIRS)
+                .slab(ModBlocks.CUT_PLATED_NETHERITE_SLAB);
 
     }
 
