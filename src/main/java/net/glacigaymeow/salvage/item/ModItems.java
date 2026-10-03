@@ -14,7 +14,7 @@ import net.minecraft.world.item.Item;
 import java.util.function.Function;
 
 public class ModItems {
-    public static final Item IRON_SCRAP = regsiterItem("iron_scrap", Item::new);
+    public static final Item METAL_SCRAP = regsiterItem("iron_s", Item::new);
 
     public static ResourceKey<Item> getRK(Item item) {
         return BuiltInRegistries.ITEM.getResourceKey(item).get();
@@ -29,7 +29,7 @@ public class ModItems {
         Salvage.LOGGER.info("Registering Mod Items for " + Salvage.MOD_ID);
 
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.INGREDIENTS).register(output ->
-                output.accept(IRON_SCRAP));
+                output.accept(METAL_SCRAP));
     }
 
 

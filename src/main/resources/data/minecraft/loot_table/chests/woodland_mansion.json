@@ -6,7 +6,7 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "name": "salvage:iron_scrap",
+                    "name": "salvage:metal_scrap",
                     "weight": 5,
                     "conditions": [],
                     "functions": [

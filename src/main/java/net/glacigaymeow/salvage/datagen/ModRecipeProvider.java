@@ -29,7 +29,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         return new RecipeProvider(registries, output) {
             @Override
             public void buildRecipes() {
-                List<ItemLike> IRON_INGOT_SMELTABLES = List.of(ModItems.IRON_SCRAP);
+                List<ItemLike> IRON_INGOT_SMELTABLES = List.of(ModItems.METAL_SCRAP);
              oreSmelting(IRON_INGOT_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.BLOCKS, Items.IRON_INGOT, 0.7f, 200, "iron_ingot");
              oreBlasting(IRON_INGOT_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.BLOCKS, Items.IRON_INGOT, 0.35f, 100, "iron_ingot");
 

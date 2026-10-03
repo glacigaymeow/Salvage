@@ -14,10 +14,10 @@ import net.minecraft.world.item.ItemStack;
 public class                           ModCreativeModeTabs {
     public static final CreativeModeTab SALVAGE_ITEM_TAB = Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB,
             Identifier.fromNamespaceAndPath(Salvage.MOD_ID, "salvage_items"),
-    FabricCreativeModeTab.builder().icon(() -> new ItemStack(ModItems.IRON_SCRAP))
+    FabricCreativeModeTab.builder().icon(() -> new ItemStack(ModItems.METAL_SCRAP))
             .title(Component.translatable("creativemodetab.salvage.salvage_items"))
             .displayItems((parameters, output) -> {
-                 output.accept(ModItems.IRON_SCRAP);
+                 output.accept(ModItems.METAL_SCRAP);
                  output.accept(ModBlocks.PLATED_NETHERITE);
                  output.accept(ModBlocks.CUT_PLATED_NETHERITE);
                  output.accept(ModBlocks.CUT_PLATED_NETHERITE_STAIRS);
