@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "salvage:block/cut_plated_netherite",
+    "side": "salvage:block/cut_plated_netherite",
+    "top": "salvage:block/cut_plated_netherite"
+  }
+}

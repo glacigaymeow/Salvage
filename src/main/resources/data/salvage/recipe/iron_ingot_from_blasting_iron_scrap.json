@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "blocks",
+  "experience": 0.35,
+  "group": "iron_ingot",
+  "ingredient": "salvage:iron_scrap",
+  "result": {
+    "id": "minecraft:iron_ingot",
+    "count": 4
+  }
+}
