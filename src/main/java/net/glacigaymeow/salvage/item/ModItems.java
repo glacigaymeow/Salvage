@@ -10,11 +10,14 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 
 import java.util.function.Function;
 
 public class ModItems {
-    public static final Item METAL_SCRAP = regsiterItem("iron_s", Item::new);
+    public static final Item METAL_SCRAP = regsiterItem("metal_scrap", Item::new);
+    public static final Item NETHERITE_PLATE = regsiterItem("netherite_plate", Item::new);
+    public static final Item DRILL_MECHANISM = regsiterItem("drill_mechanism", Item::new);
 
     public static ResourceKey<Item> getRK(Item item) {
         return BuiltInRegistries.ITEM.getResourceKey(item).get();
