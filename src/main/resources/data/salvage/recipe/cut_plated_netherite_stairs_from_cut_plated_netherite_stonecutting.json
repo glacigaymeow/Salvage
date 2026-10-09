@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": "salvage:cut_plated_netherite",
+    "result": {
+        "id": "salvage:cut_plated_netherite_stairs",
+        "count": 1
+    }
+}

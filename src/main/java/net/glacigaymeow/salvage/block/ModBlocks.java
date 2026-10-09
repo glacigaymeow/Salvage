@@ -27,6 +27,10 @@ public class ModBlocks {
         return BuiltInRegistries.BLOCK.getResourceKey(block).get();
     }
 
+    public static final Block SCRAP_BLOCK = registerBlock("scrap_block",
+            properties -> new Block(properties.strength(3f)
+                    .requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK).explosionResistance(6)));
+
     public static final Block PLATED_NETHERITE = registerBlock("plated_netherite",
             properties -> new Block(properties.strength(4f)
                     .requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK).explosionResistance(50)));

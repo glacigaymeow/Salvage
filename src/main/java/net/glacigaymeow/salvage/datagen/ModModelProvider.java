@@ -29,5 +29,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerators.generateFlatItem(ModItems.METAL_SCRAP, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.NETHERITE_PLATE, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.DRILL_MECHANISM, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.HANDHELD_DRILL, ModelTemplates.FLAT_HANDHELD_ITEM);
     }
 }

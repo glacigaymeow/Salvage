@@ -1,5 +1,6 @@
 package net.glacigaymeow.salvage.creativemodetab;
 
+import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
 import net.fabricmc.fabric.api.creativetab.v1.FabricCreativeModeTab;
 import net.glacigaymeow.salvage.Salvage;
 import net.glacigaymeow.salvage.block.ModBlocks;
@@ -9,6 +10,7 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
 import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.ItemStack;
 
 public class                           ModCreativeModeTabs {
@@ -20,6 +22,7 @@ public class                           ModCreativeModeTabs {
                  output.accept(ModItems.METAL_SCRAP);
                  output.accept(ModItems.NETHERITE_PLATE);
                  output.accept(ModItems.DRILL_MECHANISM);
+                 output.accept(ModItems.HANDHELD_DRILL);
                  output.accept(ModBlocks.PLATED_NETHERITE);
                  output.accept(ModBlocks.CUT_PLATED_NETHERITE);
                  output.accept(ModBlocks.CUT_PLATED_NETHERITE_STAIRS);
