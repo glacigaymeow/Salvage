@@ -7,6 +7,7 @@ import net.glacigaymeow.salvage.item.ModItems;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
 import net.minecraft.client.data.models.model.ModelTemplates;
+import net.minecraft.world.item.Item;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricPackOutput output) {
@@ -29,6 +30,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerators.generateFlatItem(ModItems.METAL_SCRAP, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.NETHERITE_PLATE, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.DRILL_MECHANISM, ModelTemplates.FLAT_ITEM);
-        itemModelGenerators.generateFlatItem(ModItems.HANDHELD_DRILL, ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModelGenerators.declareCustomModelItem(ModItems.HANDHELD_DRILL);
     }
 }

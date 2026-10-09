@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    "minecraft:copper_block",
+    "salvage:netherite_plate"
+  ],
+  "result": {
+    "count": 8,
+    "id": "salvage:plated_netherite"
+  }
+}
