@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_drill_mechanism": {
+      "conditions": {
+        "items": [
+          {
+            "items": "salvage:drill_mechanism"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "salvage:handheld_drill"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_drill_mechanism"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "salvage:handheld_drill"
+    ]
+  }
+}

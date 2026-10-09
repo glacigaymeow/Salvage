@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "minecraft:gold_ingot",
+    "minecraft:netherite_scrap",
+    "salvage:metal_scrap"
+  ],
+  "result": {
+    "count": 4,
+    "id": "salvage:netherite_plate"
+  }
+}

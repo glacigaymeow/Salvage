@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "M": "salvage:drill_mechanism",
+    "P": "salvage:netherite_plate",
+    "S": "salvage:metal_scrap"
+  },
+  "pattern": [
+    " S ",
+    "PMP",
+    " P "
+  ],
+  "result": {
+    "id": "salvage:handheld_drill"
+  }
+}
