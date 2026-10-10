@@ -7,5 +7,9 @@
   "block.salvage.cut_plated_netherite": "Cut Plated Netherite",
   "block.salvage.cut_plated_netherite_stairs": "Cut Plated Netherite Stairs",
   "block.salvage.cut_plated_netherite_slab": "Cut Plated Netherite Slab",
-  "creativemodetab.salvage.salvage_items": "Salvage"
+  "creativemodetab.salvage.salvage_items": "Salvage",
+  "advancements.nether.handheld_drill.title": "The Drill that will Pierce the Heavens",
+  "advancements.nether.handheld_drill.description": "Obtain a Handheld Drill to help you mine ",
+  "advancements.nether.plated_netherite.title": "Don't give this the Bite Test",
+  "advancements.nether.plated_netherite.description": "Craft Plated Netherite, a decorative version of Netherite"
 }

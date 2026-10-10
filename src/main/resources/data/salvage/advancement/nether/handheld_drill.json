@@ -1,0 +1,32 @@
+{
+    "parent": "minecraft:nether/root",
+    "display": {
+        "icon": {
+            "id": "salvage:handheld_drill"
+        },
+        "title": {
+            "translate": "advancements.nether.handheld_drill.title",
+            "fallback": "The Drill that will Pierce the Heavens"
+        },
+        "description": {
+            "translate": "advancements.nether.handheld_drill.description",
+            "fallback": "Obtain a Handheld Drill to help you mine "
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "salvage:plated_netherite": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "salvage:handheld_drill"
+                    }
+                ]
+            }
+        }
+    }
+}

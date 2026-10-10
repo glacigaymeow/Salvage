@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:blasting",
+    "ingredient": "minecraft:netherite_ingot",
+    "result": {
+        "id": "minecraft:netherite_scrap",
+        "count": 4
+    },
+    "experience": 0.1
+}

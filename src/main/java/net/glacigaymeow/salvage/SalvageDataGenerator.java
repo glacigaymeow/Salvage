@@ -2,10 +2,7 @@ package net.glacigaymeow.salvage;
 
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
-import net.glacigaymeow.salvage.datagen.ModBlockLootTableProvider;
-import net.glacigaymeow.salvage.datagen.ModBlockTagsProvider;
-import net.glacigaymeow.salvage.datagen.ModModelProvider;
-import net.glacigaymeow.salvage.datagen.ModRecipeProvider;
+import net.glacigaymeow.salvage.datagen.*;
 
 public class SalvageDataGenerator implements DataGeneratorEntrypoint {
 	@Override

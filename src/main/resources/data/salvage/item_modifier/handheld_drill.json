@@ -1,0 +1,16 @@
+{
+  "function": "minecraft:set_attributes",
+  "modifiers": [
+    {
+      "attribute": "minecraft:block_interaction_range",
+      "id": "salvage:handheld_drill",
+      "amount": 6,
+      "operation": "add_value",
+      "slot": [
+        "mainhand",
+        "offhand"
+      ]
+    }
+  ],
+  "replace": true
+}
