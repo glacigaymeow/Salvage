@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "metal_scrap",
+  "ingredients": [
+    "salvage:scrap_block"
+  ],
+  "result": {
+    "count": 4,
+    "id": "salvage:metal_scrap"
+  }
+}

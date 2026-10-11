@@ -18,7 +18,10 @@ import net.minecraft.world.level.Level;
 import java.util.function.Function;
 
 public class ModItems {
-    public static final Item METAL_SCRAP = regsiterItem("metal_scrap", Item::new);
+    public static final Item METAL_SCRAP = regsiterItem("metal_scrap", properties -> new Item(properties
+            .attributes(ItemAttributeModifiers.builder()
+                    .add(Attributes.ATTACK_DAMAGE, new AttributeModifier(Identifier.fromNamespaceAndPath(Salvage.MOD_ID, "tetanus_damage"), 1.0,
+                            AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.ANY).build())));
     public static final Item NETHERITE_PLATE = regsiterItem("netherite_plate", properties -> new Item(properties.fireResistant()));
     public static final Item DRILL_MECHANISM = regsiterItem("drill_mechanism", Item::new);
     public static final Item HANDHELD_DRILL = regsiterItem("handheld_drill", properties -> new Item(
