@@ -3,6 +3,8 @@ package net.glacigaymeow.salvage;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.glacigaymeow.salvage.datagen.*;
+import net.minecraft.core.RegistrySetBuilder;
+import net.minecraft.core.registries.Registries;
 
 public class SalvageDataGenerator implements DataGeneratorEntrypoint {
 	@Override
@@ -13,7 +15,9 @@ public class SalvageDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ModBlockTagsProvider::new);
 		pack.addProvider(ModBlockLootTableProvider::new);
 		pack.addProvider(ModRecipeProvider::new);
-
-
+	}
+	@Override
+	public void buildRegistry(RegistrySetBuilder registrySetBuilder) {
+		registrySetBuilder.add(Registries.DAMAGE_TYPE, ModDamageTypes::bootstrap);
 	}
 }

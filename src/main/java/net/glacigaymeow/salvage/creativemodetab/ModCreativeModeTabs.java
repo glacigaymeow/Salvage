@@ -20,9 +20,10 @@ public class                           ModCreativeModeTabs {
             .title(Component.translatable("creativemodetab.salvage.salvage_items"))
             .displayItems((parameters, output) -> {
                  output.accept(ModItems.METAL_SCRAP);
+                 output.accept(ModBlocks.SCRAP_BLOCK);
                  output.accept(ModItems.DRILL_MECHANISM);
                  output.accept(ModItems.HANDHELD_DRILL);
-                output.accept(ModItems.NETHERITE_PLATE);
+                 output.accept(ModItems.NETHERITE_PLATE);
                  output.accept(ModBlocks.PLATED_NETHERITE);
                  output.accept(ModBlocks.CUT_PLATED_NETHERITE);
                  output.accept(ModBlocks.CUT_PLATED_NETHERITE_STAIRS);

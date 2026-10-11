@@ -5,6 +5,11 @@
             "entries": [
                 {
                     "type": "minecraft:item",
+                    "name": "salvage:drill_mechanism",
+                    "weight": 8
+                },
+                {
+                    "type": "minecraft:item",
                     "functions": [
                         {
                             "function": "minecraft:enchant_randomly",
@@ -64,8 +69,8 @@
                         {
                             "count": {
                                 "type": "minecraft:uniform",
-                                "max": 18,
-                                "min": 8
+                                "max": 36,
+                                "min": 10
                             },
                             "function": "minecraft:set_count"
                         }

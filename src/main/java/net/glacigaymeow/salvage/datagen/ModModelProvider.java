@@ -23,6 +23,8 @@ public class ModModelProvider extends FabricModelProvider {
                 .stairs(ModBlocks.CUT_PLATED_NETHERITE_STAIRS)
                 .slab(ModBlocks.CUT_PLATED_NETHERITE_SLAB);
 
+        blockModelGenerators.createTrivialCube(ModBlocks.SCRAP_BLOCK);
+
     }
 
     @Override

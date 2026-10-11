@@ -13,10 +13,7 @@ import net.minecraft.server.packs.resources.Resource;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.SlabBlock;
-import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.StairBlock;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
 import java.util.function.Function;
@@ -45,6 +42,7 @@ public class ModBlocks {
 
     public static final Block CUT_PLATED_NETHERITE_SLAB = registerBlock("cut_plated_netherite_slab",
             properties -> new SlabBlock(properties.strength(4f).requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK)));
+
 
     private static Block registerBlock(String name, Function<BlockBehaviour.Properties, Block> function) {
         Block toRegister = function.apply(BlockBehaviour.Properties.of().setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(Salvage.MOD_ID, name))));

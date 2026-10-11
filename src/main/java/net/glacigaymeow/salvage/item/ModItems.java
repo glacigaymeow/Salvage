@@ -1,21 +1,19 @@
 package net.glacigaymeow.salvage.item;
 
-import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
+import net.fabricmc.fabric.api.item.v1.CustomDamageHandler;
 import net.glacigaymeow.salvage.Salvage;
-import net.minecraft.client.Minecraft;
+import net.glacigaymeow.salvage.datagen.ModDamageTypes;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.world.attribute.AttributeType;
 import net.minecraft.world.entity.EquipmentSlotGroup;
-import net.minecraft.world.entity.ai.attributes.Attribute;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.component.ItemAttributeModifiers;
-import org.w3c.dom.Attr;
+import net.minecraft.world.level.Level;
 
 import java.util.function.Function;
 
@@ -27,7 +25,7 @@ public class ModItems {
             properties.stacksTo(1)
                     .rarity(Rarity.UNCOMMON)
                     .attributes(ItemAttributeModifiers.builder()
-                            .add(Attributes.MINING_EFFICIENCY, new AttributeModifier(Identifier.fromNamespaceAndPath(Salvage.MOD_ID,"mining_boost"),100.0,
+                            .add(Attributes.MINING_EFFICIENCY, new AttributeModifier(Identifier.fromNamespaceAndPath(Salvage.MOD_ID,"mining_boost"),30.0,
                                         AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.HAND).build())));
 
     public static ResourceKey<Item> getRK(Item item) {
@@ -41,19 +39,6 @@ public class ModItems {
 
     public static void registerModItems(){
         Salvage.LOGGER.info("Registering Mod Items for " + Salvage.MOD_ID);
-
-        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.INGREDIENTS).register(output ->
-                output.accept(METAL_SCRAP));
-
-        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.INGREDIENTS).register(output ->
-                output.accept(NETHERITE_PLATE));
-
-        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.INGREDIENTS).register(output ->
-                output.accept(DRILL_MECHANISM));
-
-        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.TOOLS_AND_UTILITIES).register(output ->
-                output.accept(HANDHELD_DRILL));
-
 
     }
 

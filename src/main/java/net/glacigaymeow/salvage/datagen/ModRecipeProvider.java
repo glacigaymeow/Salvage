@@ -45,7 +45,14 @@ public class ModRecipeProvider extends FabricRecipeProvider {
              shapeless(RecipeCategory.MISC, ModItems.METAL_SCRAP, 4)
                      .requires((ModItems.DRILL_MECHANISM))
                      .unlockedBy(getHasName(ModItems.DRILL_MECHANISM), has(ModItems.DRILL_MECHANISM))
-                     .save(output);
+                     .group("metal_scrap")
+                     .save(output,"metal_scrap_from_drill_mechanism");
+
+             shapeless(RecipeCategory.MISC, ModItems.METAL_SCRAP, 4)
+                     .requires(ModBlocks.SCRAP_BLOCK)
+                     .unlockedBy(getHasName(ModBlocks.SCRAP_BLOCK),has(ModBlocks.SCRAP_BLOCK))
+                     .group("metal_scrap")
+                     .save(output,"metal_scrap_from_scrap_block");
 
              shaped(RecipeCategory.TOOLS, ModItems.HANDHELD_DRILL)
                      .pattern(" S ")
@@ -55,6 +62,13 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                      .define('P', ModItems.NETHERITE_PLATE)
                      .define('M', ModItems.DRILL_MECHANISM)
                      .unlockedBy(getHasName(ModItems.DRILL_MECHANISM), has(ModItems.DRILL_MECHANISM))
+                     .save(output);
+
+             shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SCRAP_BLOCK)
+                     .pattern("XX")
+                     .pattern("XX")
+                     .define('X', ModItems.METAL_SCRAP)
+                     .unlockedBy(getHasName(ModItems.METAL_SCRAP), has(ModItems.METAL_SCRAP))
                      .save(output);
 
 
