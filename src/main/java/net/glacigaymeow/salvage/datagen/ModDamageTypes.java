@@ -1,10 +1,12 @@
 package net.glacigaymeow.salvage.datagen;
 
 import net.glacigaymeow.salvage.Salvage;
+import net.minecraft.client.renderer.item.properties.numeric.Damage;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.server.packs.resources.Resource;
 import net.minecraft.world.damagesource.DamageEffects;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.damagesource.DamageType;
@@ -19,7 +21,7 @@ public class ModDamageTypes {
         context.register(TETANUS, new DamageType("tetanus", 0.1f, DamageEffects.HURT));
     }
 
-    public static DamageSource create(Level level, ResourceKey<DamageType> key) {
-        return new DamageSource(level.registryAccess().lookupOrThrow(Registries.DAMAGE_TYPE).getOrThrow(key));
+    public static DamageSource create (Level level, ResourceKey<DamageType> key) {
+        return new DamageSource(level.registryAccess().lookup(Registries.DAMAGE_TYPE).get().getOrThrow(key));
     }
 }

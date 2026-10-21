@@ -3,14 +3,20 @@
   "item.salvage.netherite_plate": "Netherite Plate",
   "item.salvage.drill_mechanism": "Drill Mechanism",
   "item.salvage.handheld_drill": "Handheld Drill",
+
   "block.salvage.scrap_block": "Block of Metal Scrap",
   "block.salvage.plated_netherite": "Plated Block Of Netherite",
   "block.salvage.cut_plated_netherite": "Cut Plated Netherite",
   "block.salvage.cut_plated_netherite_stairs": "Cut Plated Netherite Stairs",
   "block.salvage.cut_plated_netherite_slab": "Cut Plated Netherite Slab",
+
+  "death.attack.tetanus": "%s forgot their tetanus shot",
+  "death.attack.tetanus.player": "%s forgot their tetanus shot before fighting %s",
+
   "creativemodetab.salvage.salvage_items": "Salvage",
+
   "advancements.nether.handheld_drill.title": "The Drill that will Pierce the Heavens",
   "advancements.nether.handheld_drill.description": "Obtain a Handheld Drill to help you mine ",
-  "advancements.nether.plated_netherite.title": "Don't give this the Bite Test",
+  "advancements.nether.plated_netherite.title": "Don't Give this the Bite Test",
   "advancements.nether.plated_netherite.description": "Craft Plated Netherite, a decorative version of Netherite"
 }

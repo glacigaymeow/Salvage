@@ -6,7 +6,7 @@
         },
         "title": {
             "translate": "advancements.nether.plated_netherite.title",
-            "fallback": "Don't give this the Bite Test"
+            "fallback": "Don't Give this the Bite Test"
         },
         "description": {
             "translate": "advancements.nether.plated_netherite.description",

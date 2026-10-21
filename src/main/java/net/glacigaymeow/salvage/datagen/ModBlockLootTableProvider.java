@@ -16,7 +16,7 @@ public class ModBlockLootTableProvider extends FabricBlockLootSubProvider {
 
     @Override
     public void generate() {
-
+        dropSelf(ModBlocks.SCRAP_BLOCK);
         dropSelf(ModBlocks.PLATED_NETHERITE);
         dropSelf(ModBlocks.CUT_PLATED_NETHERITE);
         dropSelf(ModBlocks.CUT_PLATED_NETHERITE_STAIRS);
