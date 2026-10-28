@@ -72,7 +72,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                      .save(output);
 
 
-             shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CUT_PLATED_NETHERITE, 8)
+             shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CUT_PLATED_NETHERITE, 16)
                      .pattern("XX")
                      .pattern("XX")
                      .define('X', ModBlocks.PLATED_NETHERITE)
@@ -86,6 +86,14 @@ public class ModRecipeProvider extends FabricRecipeProvider {
              slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CUT_PLATED_NETHERITE_SLAB, Ingredient.of(ModBlocks.CUT_PLATED_NETHERITE))
                      .unlockedBy(getHasName(ModBlocks.CUT_PLATED_NETHERITE),has(ModBlocks.PLATED_NETHERITE))
                      .save(output);
+
+                stairBuilder(ModBlocks.SCRAP_BLOCK_STAIRS, Ingredient.of(ModBlocks.SCRAP_BLOCK))
+                        .unlockedBy(getHasName(ModBlocks.SCRAP_BLOCK),has(ModBlocks.SCRAP_BLOCK))
+                        .save(output);
+
+                slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SCRAP_BLOCK_SLAB, Ingredient.of(ModBlocks.SCRAP_BLOCK))
+                        .unlockedBy(getHasName(ModBlocks.SCRAP_BLOCK),has(ModBlocks.SCRAP_BLOCK))
+                        .save(output);
 
             };
         };

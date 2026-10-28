@@ -20,8 +20,10 @@ public class ModBlockLootTableProvider extends FabricBlockLootSubProvider {
         dropSelf(ModBlocks.PLATED_NETHERITE);
         dropSelf(ModBlocks.CUT_PLATED_NETHERITE);
         dropSelf(ModBlocks.CUT_PLATED_NETHERITE_STAIRS);
+        dropSelf(ModBlocks.SCRAP_BLOCK_STAIRS);
 
         add(ModBlocks.CUT_PLATED_NETHERITE_SLAB, this::createSlabItemTable);
+        add(ModBlocks.SCRAP_BLOCK_SLAB, this::createSlabItemTable);
 
     }
 }

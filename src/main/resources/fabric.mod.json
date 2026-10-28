@@ -3,7 +3,7 @@
 	"id": "salvage",
 	"version": "${version}",
 	"name": "Salvage",
-	"description": "Scrap that can be smelted into resources.",
+	"description": "Metal Scrap with many uses!",
 	"authors": [
 		"glacigaymeow"
 	],

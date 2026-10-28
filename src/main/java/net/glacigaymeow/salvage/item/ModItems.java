@@ -24,7 +24,7 @@ public class ModItems {
                     .add(Attributes.ATTACK_DAMAGE, new AttributeModifier(Identifier.fromNamespaceAndPath(Salvage.MOD_ID, "attack_damage"), -0.9, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL), EquipmentSlotGroup.MAINHAND, ItemAttributeModifiers.Display.hidden())
                     .build())));
     public static final Item NETHERITE_PLATE = regsiterItem("netherite_plate", properties -> new Item(properties.fireResistant()));
-    public static final Item DRILL_MECHANISM = regsiterItem("drill_mechanism", Item::new);
+    public static final Item DRILL_MECHANISM = regsiterItem("drill_mechanism", properties -> new Item(properties.rarity(Rarity.UNCOMMON)));
     public static final Item HANDHELD_DRILL = regsiterItem("handheld_drill", properties -> new Item(
             properties.stacksTo(1)
                     .rarity(Rarity.UNCOMMON)

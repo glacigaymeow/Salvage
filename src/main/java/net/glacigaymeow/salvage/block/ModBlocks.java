@@ -15,6 +15,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.material.MapColor;
 
 import java.util.function.Function;
 
@@ -26,23 +27,29 @@ public class ModBlocks {
 
     public static final Block SCRAP_BLOCK = registerBlock("scrap_block",
             properties -> new Block(properties.strength(3f)
-                    .requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK).explosionResistance(6)));
+                    .requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK).explosionResistance(6).mapColor(MapColor.PODZOL)));
+
+    public static final Block SCRAP_BLOCK_STAIRS = registerBlock("scrap_block_stairs",
+    properties -> new StairBlock(ModBlocks.SCRAP_BLOCK.defaultBlockState(),
+            properties.strength(3f).requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK).explosionResistance(6)));
+
+    public static final Block SCRAP_BLOCK_SLAB = registerBlock("scrap_block_slab",
+            properties -> new SlabBlock(properties.strength(3f).requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK).explosionResistance(6)));
 
     public static final Block PLATED_NETHERITE = registerBlock("plated_netherite",
             properties -> new Block(properties.strength(4f)
-                    .requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK).explosionResistance(50)));
+                    .requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK).explosionResistance(50).mapColor(MapColor.COLOR_BLACK)));
 
     public static final Block CUT_PLATED_NETHERITE = registerBlock("cut_plated_netherite",
             properties -> new Block(properties.strength(4f)
-                    .requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK).explosionResistance(50)));
+                    .requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK).explosionResistance(50).mapColor(MapColor.COLOR_BLACK)));
 
     public static final Block CUT_PLATED_NETHERITE_STAIRS = registerBlock("cut_plated_netherite_stairs",
     properties -> new StairBlock(ModBlocks.CUT_PLATED_NETHERITE.defaultBlockState(),
-    properties.strength(4f).requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK)));
+    properties.strength(4f).requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK).explosionResistance(50).mapColor(MapColor.COLOR_BLACK)));
 
     public static final Block CUT_PLATED_NETHERITE_SLAB = registerBlock("cut_plated_netherite_slab",
-            properties -> new SlabBlock(properties.strength(4f).requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK)));
-
+            properties -> new SlabBlock(properties.strength(4f).requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK).explosionResistance(50).mapColor(MapColor.COLOR_BLACK)));
 
     private static Block registerBlock(String name, Function<BlockBehaviour.Properties, Block> function) {
         Block toRegister = function.apply(BlockBehaviour.Properties.of().setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(Salvage.MOD_ID, name))));

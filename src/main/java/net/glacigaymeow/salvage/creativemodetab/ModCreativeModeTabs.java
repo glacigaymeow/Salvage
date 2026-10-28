@@ -21,6 +21,8 @@ public class                           ModCreativeModeTabs {
             .displayItems((parameters, output) -> {
                  output.accept(ModItems.METAL_SCRAP);
                  output.accept(ModBlocks.SCRAP_BLOCK);
+                 output.accept(ModBlocks.SCRAP_BLOCK_STAIRS);
+                 output.accept(ModBlocks.SCRAP_BLOCK_SLAB);
                  output.accept(ModItems.DRILL_MECHANISM);
                  output.accept(ModItems.HANDHELD_DRILL);
                  output.accept(ModItems.NETHERITE_PLATE);

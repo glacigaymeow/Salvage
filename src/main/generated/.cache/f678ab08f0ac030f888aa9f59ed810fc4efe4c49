@@ -1,5 +1,5 @@
 // 26.2	-999999999-01-01T00:00:00	Salvage/Tags for minecraft:block
-8e6fd71228a4afe480bcd6f5785ec3811588a233 data/minecraft/tags/block/mineable/pickaxe.json
-e6c24cbd027f2b5945e9b5151cd23b5ad08c2a12 data/minecraft/tags/block/needs_stone_tool.json
-1ae74518a690aaa15ae323cf62f911a7ac999361 data/minecraft/tags/block/slabs.json
-dba492b3d7ee391e432ff73b35b3ba543621c53a data/minecraft/tags/block/stairs.json
+8522480df24bd7d0fa93086f3a30eb91b6776f46 data/minecraft/tags/block/mineable/pickaxe.json
+9eae51538ecdbcf6c0d55c5330b79559d222a007 data/minecraft/tags/block/needs_stone_tool.json
+1389e084120c883949d21b1fe0528c800e863339 data/minecraft/tags/block/slabs.json
+9c58c21d1ea8877f1a35a83ebc1cffac82c0be51 data/minecraft/tags/block/stairs.json

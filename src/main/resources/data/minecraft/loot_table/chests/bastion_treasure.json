@@ -6,6 +6,31 @@
             "entries": [
                 {
                     "type": "minecraft:item",
+                    "name": "salvage:metal_scrap",
+                    "weight": 7,
+                    "conditions": [],
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 2
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:empty",
+                    "weight": 3
+                }
+            ],
+            "functions": []
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
                     "name": "salvage:drill_mechanism",
                     "weight": 1
                 }

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "salvage:scrap_block",
+  "result": {
+    "id": "salvage:scrap_block_slab",
+    "count": 2
+  }
+}

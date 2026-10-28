@@ -5,6 +5,7 @@ import net.fabricmc.api.ModInitializer;
 import net.glacigaymeow.salvage.block.ModBlocks;
 import net.glacigaymeow.salvage.creativemodetab.ModCreativeModeTabs;
 import net.glacigaymeow.salvage.item.ModItems;
+import net.glacigaymeow.salvage.sound.ModSounds;
 import net.minecraft.resources.Identifier;
 
 import org.slf4j.Logger;
@@ -21,6 +22,8 @@ public class Salvage implements ModInitializer {
 		ModItems.registerModItems();
 
 		ModBlocks.registerModBlocks();
+
+		ModSounds.registerSounds();
 	}
 
 

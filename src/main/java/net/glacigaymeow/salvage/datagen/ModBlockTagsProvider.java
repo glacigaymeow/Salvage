@@ -19,6 +19,8 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
     protected void addTags(HolderLookup.Provider registries) {
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.getRK(ModBlocks.SCRAP_BLOCK))
+                .add(ModBlocks.getRK(ModBlocks.SCRAP_BLOCK_STAIRS))
+                .add(ModBlocks.getRK(ModBlocks.SCRAP_BLOCK_SLAB))
                 .add(ModBlocks.getRK(ModBlocks.PLATED_NETHERITE))
                 .add(ModBlocks.getRK(ModBlocks.CUT_PLATED_NETHERITE))
                 .add(ModBlocks.getRK(ModBlocks.CUT_PLATED_NETHERITE_STAIRS))
@@ -26,15 +28,19 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
 
         tag(BlockTags.NEEDS_STONE_TOOL)
                 .add(ModBlocks.getRK(ModBlocks.SCRAP_BLOCK))
+                .add(ModBlocks.getRK(ModBlocks.SCRAP_BLOCK_STAIRS))
+                .add(ModBlocks.getRK(ModBlocks.SCRAP_BLOCK_SLAB))
                 .add(ModBlocks.getRK(ModBlocks.CUT_PLATED_NETHERITE_STAIRS))
                 .add(ModBlocks.getRK(ModBlocks.CUT_PLATED_NETHERITE_SLAB))
                 .add(ModBlocks.getRK(ModBlocks.PLATED_NETHERITE))
                 .add(ModBlocks.getRK(ModBlocks.PLATED_NETHERITE));
 
         tag(BlockTags.STAIRS)
-                .add(ModBlocks.getRK(ModBlocks.CUT_PLATED_NETHERITE_STAIRS));
+                .add(ModBlocks.getRK(ModBlocks.CUT_PLATED_NETHERITE_STAIRS))
+                .add(ModBlocks.getRK(ModBlocks.SCRAP_BLOCK_STAIRS));
         tag(BlockTags.SLABS)
-                .add(ModBlocks.getRK(ModBlocks.CUT_PLATED_NETHERITE_SLAB));
+                .add(ModBlocks.getRK(ModBlocks.CUT_PLATED_NETHERITE_SLAB))
+                .add(ModBlocks.getRK(ModBlocks.SCRAP_BLOCK_SLAB));
 
     }
 }

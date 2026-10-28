@@ -5,6 +5,9 @@
   "item.salvage.handheld_drill": "Handheld Drill",
 
   "block.salvage.scrap_block": "Block of Metal Scrap",
+  "block.salvage.scrap_block_stairs": "Metal Scrap Stairs",
+  "block.salvage.scrap_block_slab": "Metal Scrap Slab",
+
   "block.salvage.plated_netherite": "Plated Block Of Netherite",
   "block.salvage.cut_plated_netherite": "Cut Plated Netherite",
   "block.salvage.cut_plated_netherite_stairs": "Cut Plated Netherite Stairs",
@@ -12,6 +15,8 @@
 
   "death.attack.tetanus": "%s forgot their tetanus shot",
   "death.attack.tetanus.player": "%s forgot their tetanus shot before fighting %s",
+
+  "sounds.salvage.scrap_block_place": "Block Placed ",
 
   "creativemodetab.salvage.salvage_items": "Salvage",
 

@@ -1,6 +1,8 @@
 {
   "values": [
     "salvage:scrap_block",
+    "salvage:scrap_block_stairs",
+    "salvage:scrap_block_slab",
     "salvage:cut_plated_netherite_stairs",
     "salvage:cut_plated_netherite_slab",
     "salvage:plated_netherite",

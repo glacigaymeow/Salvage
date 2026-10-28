@@ -16,6 +16,7 @@ public class  SalvageDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ModBlockLootTableProvider::new);
 		pack.addProvider(ModRecipeProvider::new);
 		pack.addProvider(ModRegistryDataProvider::new);
+		pack.addProvider(ModSoundsProvider::new);
 	}
 	@Override
 	public void buildRegistry(RegistrySetBuilder registryBuilder) {
