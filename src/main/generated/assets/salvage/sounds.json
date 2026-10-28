@@ -1,0 +1,8 @@
+{
+  "scrap_block_place": {
+    "sounds": [
+      "salvage:scrap_block_place"
+    ],
+    "subtitle": "sounds.salvage.scrap_block_place"
+  }
+}

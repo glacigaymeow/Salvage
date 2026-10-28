@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "salvage:block/scrap_block_slab"
+    },
+    "type=double": {
+      "model": "salvage:block/scrap_block"
+    },
+    "type=top": {
+      "model": "salvage:block/scrap_block_slab_top"
+    }
+  }
+}
