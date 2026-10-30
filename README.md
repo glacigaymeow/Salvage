@@ -4,6 +4,7 @@ Salvage is a mod that is centered around a new item, **Metal Scrap**, which has 
 <details>
 <summary>Obtaining Metal Scrap</summary>
 
+
 Metal Scrap can be found around the world in structures, such as Abandoned Mineshafts, Dungeons, and in the Nether, Bastions and Fortresses.
 
 In these structures you'll find tons of Metal Scraps, left behind from a bygone era.
@@ -17,6 +18,7 @@ You can also obtain them occasionally from zombies and obtain a good amount of t
 <details>
 <summary> What can I do with it? </summary>
 
+
 Metal Scrap, being a collection of different old metal parts, have some pretty good uses.
 
 It's main value comes from it being mostly made up of Iron. By smelting it in a furnace, you're able to repurpose it into the form of 4 Iron Ingots. With how common these are in the world, you're able to obtain plenty of iron for your needs just by exploring.
@@ -29,6 +31,7 @@ You can also craft 4 Metal Scrap into a Block of Metal Scrap, either to help you
 
 <details>
 <summary> Crafting Plated Netherite </summary>
+
 
 Metal Scrap also has another lucrative use: **Decorative Netherite Blocks**
 
@@ -50,6 +53,7 @@ Unleash the power of Goth Bathroom Tiles into the world :3
 <details>
 <summary> The Drill Mechanism & Handheld Drill </summary>
 
+
 Sometimes inside of Bastions you'll be able to find a rare piece of forgotten technology.
 
 The **Drill Mechanism**, is an item you can obtain either from Bastion Chests or rarely from Bartering.
@@ -66,6 +70,7 @@ However, the Drill is still useful. By holding it in the offhand along with a to
 
 <details>
 <summary> Some Other Things! </summary>
+
 
 **Tetanus Death Message**: By killing an entity with a Metal Scrap, it shows the death message [Victim] forgot their tetanus shot before fighting [Attacker]
 
@@ -86,6 +91,7 @@ Make sure to get your Tetanus shot! (Or any important vaccination for that matte
 <details>
 <summary>Planned Features</summary>
 
+
 - Ports to newer versions
 - Custom sounds for the Block of Metal Scrap
 - Custom Music Disc (Trying to track down someone to make it for me qwq)
@@ -101,6 +107,7 @@ I feel like backports to 1.21.1/1.20.1 feel unecessary with the Sift coming in a
 
 <details>
 <summary>Credits :3</summary>
+
 
 ### Created by:
 
