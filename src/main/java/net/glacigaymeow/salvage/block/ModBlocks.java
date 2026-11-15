@@ -21,9 +21,7 @@ import java.util.function.Function;
 
 public class ModBlocks {
 
-    public static ResourceKey<Block> getRK(Block block) {
-        return BuiltInRegistries.BLOCK.getResourceKey(block).get();
-    }
+    public static ResourceKey<Block> getRK(Block block) {return BuiltInRegistries.BLOCK.getResourceKey(block).get();}
 
     public static final Block SCRAP_BLOCK = registerBlock("scrap_block",
             properties -> new Block(properties.strength(3f)

@@ -32,9 +32,7 @@ public class ModItems {
                             .add(Attributes.MINING_EFFICIENCY, new AttributeModifier(Identifier.fromNamespaceAndPath(Salvage.MOD_ID,"mining_boost"),30.0,
                                         AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.HAND).build())));
 
-    public static ResourceKey<Item> getRK(Item item) {
-        return BuiltInRegistries.ITEM.getResourceKey(item).get();
-    }
+    public static ResourceKey<Item> getRK(Item item) {return BuiltInRegistries.ITEM.getResourceKey(item).get();}
 
     private static Item regsiterItem(String name, Function<Item.Properties, Item> function) {
         return Registry.register(BuiltInRegistries.ITEM, Identifier.fromNamespaceAndPath(Salvage.MOD_ID, name),
